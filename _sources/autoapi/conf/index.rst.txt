@@ -43,7 +43,7 @@ Module Contents
    
 
 .. py:data:: html_theme
-   :value: 'alabaster'
+   :value: 'sphinx_rtd_theme'
 
    
 
