@@ -8,10 +8,21 @@ on:
       - "main"
 
 jobs:
-  docs:
+  test-build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
     - uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs/"
+        build-dir: "docs/_build/html"
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: "docs/"
+        publish-dir: "docs/_build/html"
+        publish-branch: "gh-pages"
+        publish-token: ${{ secrets.GH_TOKEN }}
