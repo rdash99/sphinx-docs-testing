@@ -15,14 +15,13 @@ jobs:
     - uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "docs/"
-        build-dir: "docs/_build/html"
-  publish:
+  push-to-gh-pages:
+    needs: test-build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - uses: ammaraskar/sphinx-action@master
-      with:
-        docs-folder: "docs/"
-        publish-dir: "docs/_build/html"
-        publish-branch: "gh-pages"
-        publish-token: ${{ secrets.GH_TOKEN }}
+      - name: Push to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          publish_dir: "docs/_build/html"
+          publish_branch: gh-pages
