@@ -9,11 +9,3 @@ Welcome to Test Project's documentation!
 .. toctree::
    usage
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
