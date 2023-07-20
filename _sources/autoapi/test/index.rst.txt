@@ -1,0 +1,29 @@
+:py:mod:`test`
+==============
+
+.. py:module:: test
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   test.test
+
+
+
+.. py:function:: test(kind=None)
+
+   This is a test function.
+
+   :param kind: Optional "kind" of ingredients.
+   :type kind: list[str] or None
+   :return: The ingredients list.
+   :rtype: list[str]
+
+
