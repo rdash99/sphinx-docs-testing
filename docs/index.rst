@@ -9,4 +9,3 @@ Welcome to Test Project's documentation!
 .. toctree::
    usage
 
-
