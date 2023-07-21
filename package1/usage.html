@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>API Reference &mdash; &lt;Project name here&gt;  documentation</title>
+  <title>Usage &mdash; &lt;Project name here&gt;  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
@@ -21,8 +21,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="test" href="test/index.html" />
-    <link rel="prev" title="Usage" href="../package1/usage.html" /> 
+    <link rel="next" title="API Reference" href="../autoapi/index.html" />
+    <link rel="prev" title="Usage" href="../usage.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,12 +46,12 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../package1/usage.html">Usage</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="test/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">test</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="test2/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">test2</span></code></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-recipes">Creating recipes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../autoapi/index.html">API Reference</a></li>
 </ul>
 
         </div>
@@ -68,9 +68,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">API Reference</li>
+      <li class="breadcrumb-item active">Usage</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/autoapi/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/package1/usage.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -78,29 +78,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="api-reference">
-<h1>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h1>
-<p>This page contains auto-generated API reference documentation <a class="footnote-reference brackets" href="#f1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="test/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">test</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="test2/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">test2</span></code></a></li>
-</ul>
+  <section id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h1>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h2>
+<p>To use Test, first install it using pip:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(.venv)</span> <span class="gp">$ </span>pip install test2
+</pre></div>
 </div>
-<aside class="footnote-list brackets">
-<aside class="footnote brackets" id="f1" role="note">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>Created with <a class="reference external" href="https://github.com/readthedocs/sphinx-autoapi">sphinx-autoapi</a></p>
-</aside>
-</aside>
+</section>
+<section id="creating-recipes">
+<h2>Creating recipes<a class="headerlink" href="#creating-recipes" title="Permalink to this heading"></a></h2>
+<p>To retrieve a list of random ingredients,
+you can use the <code class="docutils literal notranslate"><span class="pre">test2.test()</span></code> function:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">test2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">test2</span><span class="o">.</span><span class="n">test</span><span class="p">()</span>
+<span class="go">[&#39;milk&#39;, &#39;eggs&#39;, &#39;flour&#39;, &#39;sugar&#39;, &#39;butter&#39;, &#39;salt&#39;, &#39;pepper&#39;, &#39;water&#39;, &#39;oil&#39;, &#39;vinegar&#39;]</span>
+</pre></div>
+</div>
+<p>You can also specify a kind of ingredient to retrieve:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">test2</span><span class="o">.</span><span class="n">test</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;fruit&#39;</span><span class="p">)</span>
+<span class="go">[&#39;apple&#39;, &#39;banana&#39;, &#39;orange&#39;, &#39;grape&#39;, &#39;strawberry&#39;, &#39;blueberry&#39;, &#39;raspberry&#39;, &#39;blackberry&#39;, &#39;lemon&#39;, &#39;lime&#39;]</span>
+</pre></div>
+</div>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../package1/usage.html" class="btn btn-neutral float-left" title="Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="test/index.html" class="btn btn-neutral float-right" title="test" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../usage.html" class="btn btn-neutral float-left" title="Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../autoapi/index.html" class="btn btn-neutral float-right" title="API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
