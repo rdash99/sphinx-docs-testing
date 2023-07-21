@@ -12,7 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: rdash99/sphinx-action@master
+      - name: Build docs
+        uses: rdash99/sphinx-action@master
         with:
           docs-folder: "docs/"
       - name: Push to gh-pages
