@@ -1,0 +1,15 @@
+:py:mod:`workspace`
+===================
+
+.. py:module:: workspace
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   test/index.rst
+
+

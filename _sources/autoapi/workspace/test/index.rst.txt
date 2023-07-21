@@ -1,7 +1,7 @@
-:py:mod:`test`
-==============
+:py:mod:`workspace.test`
+========================
 
-.. py:module:: test
+.. py:module:: workspace.test
 
 
 Module Contents
@@ -13,7 +13,7 @@ Functions
 
 .. autoapisummary::
 
-   test.test
+   workspace.test.test
 
 
 
