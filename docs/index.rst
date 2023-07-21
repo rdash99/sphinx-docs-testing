@@ -8,3 +8,4 @@ Welcome to Test Project's documentation!
 
 .. toctree::
    usage
+   package1/usage
