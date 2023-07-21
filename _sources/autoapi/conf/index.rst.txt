@@ -32,6 +32,11 @@ Module Contents
 
    
 
+.. py:data:: autoapi_ignore
+   :value: ['conf.py']
+
+   
+
 .. py:data:: templates_path
    :value: ['_templates']
 
