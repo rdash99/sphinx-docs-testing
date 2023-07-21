@@ -26,4 +26,7 @@ Functions
    :return: The ingredients list.
    :rtype: list[str]
 
+   >>> test()
+   ['spam', 'eggs', 'bacon']
+
 
