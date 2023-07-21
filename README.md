@@ -1,6 +1,6 @@
 # sphinx-docs-testing
  
-In order for the action to build the documentation, you need to create a /docs folder in your repository and add a sphinx project in it. You can use the sphinx-quickstart command to create a new sphinx project.
+In order for the action to build the documentation, you need to create a /docs folder in your repository and add a sphinx project in it. You can use the sphinx-quickstart command to create a new sphinx project. Alternatively, you can copy the contents of the folder in this repository to your repository and modify the conf.py.
 
 Once you have created the sphinx project, you need to configure it by editing the conf.py file. You can find an example of a conf.py file in this repository.
 
@@ -27,6 +27,9 @@ extensions = [
 
 - `autoapi_dirs`: set the path/s to the directory/s that contains the source code of your project
 - `autoapi_ignore`: set the path/s to the directory/s that contains code that you want to ignore, such as tests
+
+optionally, you can also set the following:
+`html_theme`: set the theme of your documentation (e.g. `sphinx_rtd_theme`)
 
 
 
