@@ -1,4 +1,4 @@
-def test2(kind=None):
+def test(kind=None):
     """This is a test function.
 
     :param kind: Optional "kind" of ingredients.
