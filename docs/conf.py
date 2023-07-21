@@ -15,7 +15,7 @@ import sys
 import pathlib
 #sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 #add files to sys path
-sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.abspath('..'), os.path.abspath('../src'), os.path.abspath('../tests'))
 
 
 # -- Project information -----------------------------------------------------
