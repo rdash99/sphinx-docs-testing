@@ -5,6 +5,9 @@ def test(kind=None):
     :type kind: list[str] or None
     :return: The ingredients list.
     :rtype: list[str]
+    
+    >>> test()
+    ['spam', 'eggs', 'bacon']
     """
     print('test.py')
     return ['spam', 'eggs', 'bacon']
