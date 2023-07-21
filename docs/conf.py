@@ -36,9 +36,9 @@ extensions = [
     'autoapi.extension',
 ]
 
-#list of directories
+#list of directories to search, will go down recursively
 autoapi_dirs = ['..']
-#ignore list
+#ignore list - exclude tests and docs
 autoapi_ignore = ['*/tests/*', '*/docs/*']
 
 # Add any paths that contain templates here, relative to this directory.
