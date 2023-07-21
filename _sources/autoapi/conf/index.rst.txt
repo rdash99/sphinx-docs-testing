@@ -28,7 +28,7 @@ Module Contents
    
 
 .. py:data:: autoapi_dirs
-   :value: ['../']
+   :value: ['..']
 
    
 
