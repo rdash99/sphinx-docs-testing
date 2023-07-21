@@ -13,11 +13,11 @@ Functions
 
 .. autoapisummary::
 
-   test2.test2
+   test2.test
 
 
 
-.. py:function:: test2(kind=None)
+.. py:function:: test(kind=None)
 
    This is a test function.
 

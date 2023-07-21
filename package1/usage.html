@@ -48,7 +48,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#creating-recipes">Creating recipes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-recipes">Creating recipes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#test2.test"><code class="docutils literal notranslate"><span class="pre">test()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../autoapi/index.html">API Reference</a></li>
@@ -91,6 +94,23 @@
 <h2>Creating recipes<a class="headerlink" href="#creating-recipes" title="Permalink to this heading"></a></h2>
 <p>To retrieve a list of random ingredients,
 you can use the <code class="docutils literal notranslate"><span class="pre">test2.test()</span></code> function:</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="test2.test">
+<span class="sig-prename descclassname"><span class="pre">test2.</span></span><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#test2.test" title="Permalink to this definition"></a></dt>
+<dd><p>This is a test function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>kind</strong> (<em>list</em><em>[</em><em>str</em><em>] or </em><em>None</em>) – Optional “kind” of ingredients.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The ingredients list.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">test2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">test2</span><span class="o">.</span><span class="n">test</span><span class="p">()</span>
 <span class="go">[&#39;milk&#39;, &#39;eggs&#39;, &#39;flour&#39;, &#39;sugar&#39;, &#39;butter&#39;, &#39;salt&#39;, &#39;pepper&#39;, &#39;water&#39;, &#39;oil&#39;, &#39;vinegar&#39;]</span>
