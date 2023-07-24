@@ -31,7 +31,7 @@ extensions = [
 - `autoapi_dirs`: set the path/s to the directory/s that contains the source code of your project
 - `autoapi_ignore`: set the path/s to the directory/s that contains code that you want to ignore, such as tests
 
-optionally, you can also set the following:
+optionally, you can also set the following if you are using HTML output instead of markdown:
 `html_theme`: set the theme of your documentation (e.g. `sphinx_rtd_theme`)
 
 
