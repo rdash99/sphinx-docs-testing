@@ -1,6 +1,8 @@
 # sphinx-docs-testing
  
-In order for the action to build the documentation, you need to create a /docs folder in your repository and add a sphinx project in it. You can use the sphinx-quickstart command to create a new sphinx project. Alternatively, you can copy the contents of the folder in this repository to your repository and modify the conf.py.
+In order for the action to build the documentation, you need to create a /docs folder in your repository and add a sphinx project in it. Copy the contents of the folder in this repository to your repository and modify the conf.py.
+
+All custom pages should be added to the /docs folder. The index.rst file in the /docs folder should be modified to include the custom pages. You can find an example of an index.rst file in this repository.
 
 Once you have created the sphinx project, you need to configure it by editing the conf.py file. You can find an example of a conf.py file in this repository.
 
@@ -12,6 +14,7 @@ The sections that you need to edit are:
 - `extensions`: add the `sphinx.ext.autodoc` extension
 - `extensions`: add the `sphinx.ext.autosummary` extension
 - `extensions`: add the `autoapi.extension` extension
+- `extensions`: add the `"sphinx_markdown_builder"` extension
 
 ```python
 extensions = [
@@ -33,4 +36,12 @@ optionally, you can also set the following:
 
 
 
-Finally, you need to create a workflow file in your repository. You can find an example of a workflow file in this repository. The workflow file should be located in the .github/workflows folder of your repository.
+Finally, you need to create a workflow file in your repository. You can copy the contents of the workflow file in this repository to your repository. The workflow file is located in `.github/workflows/sphinxBuild.yml`.
+
+You will need to provide the following information:
+
+A github token with at least the `repo` scope. You can create a new token by going to your github settings, then Developer settings, then Personal access tokens. Make sure to copy the token as you will not be able to see it again. Add this as the GH_TOKEN secret in your repository.
+
+Replace the `REPO` environment variable with the name of your wiki repository.
+
+All the environment variable options can be found [here]([Title](https://github.com/s0/git-publish-subdir-action))
