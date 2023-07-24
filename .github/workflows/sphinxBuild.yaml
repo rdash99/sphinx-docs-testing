@@ -19,13 +19,11 @@ jobs:
       - name: Push to branch
         uses: github-actions-x/commit@v2.9
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GH_TOKEN }}
           push-branch: 'markdown'
           commit-message: 'publish'
           force-add: 'true'
           files: 'docs/_build/*'
-          name: github-actions[bot]
-          email: github-actions[bot]@users.noreply.github.com
       # - name: Push to gh-pages
       #   uses: peaceiris/actions-gh-pages@v3
       #   with:
