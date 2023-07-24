@@ -38,6 +38,8 @@ optionally, you can also set the following:
 
 Finally, you need to create a workflow file in your repository. You can copy the contents of the workflow file in this repository to your repository. The workflow file is located in `.github/workflows/sphinxBuild.yml`.
 
+Change the `on` section to specify when you want the action to run from the current setup to something sensible. You can find more information about the `on` section [here](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#on).
+
 You will need to provide the following information:
 
 A github token with at least the `repo` scope. You can create a new token by going to your github settings, then Developer settings, then Personal access tokens. Make sure to copy the token as you will not be able to see it again. Add this as the GH_TOKEN secret in your repository.
