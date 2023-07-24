@@ -34,8 +34,6 @@ extensions = [
 optionally, you can also set the following if you are using HTML output instead of markdown:
 `html_theme`: set the theme of your documentation (e.g. `sphinx_rtd_theme`)
 
-
-
 Finally, you need to create a workflow file in your repository. You can copy the contents of the workflow file in this repository to your repository. The workflow file is located in `.github/workflows/sphinxBuild.yml`.
 
 Change the `on` section to specify when you want the action to run from the current setup to something sensible. You can find more information about the `on` section [here](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#on).
