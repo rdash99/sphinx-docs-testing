@@ -15,7 +15,7 @@ jobs:
       - uses: rdash99/sphinx-action@master
         with:
           docs-folder: "docs/"
-          build-command: "sphinx-build -m markdown . _build"
+          build-command: "sphinx-build -M markdown . _build"
       - name: Push to branch
         uses: github-actions-x/commit@v2.9
         with:
