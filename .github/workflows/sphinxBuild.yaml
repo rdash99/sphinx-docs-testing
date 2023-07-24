@@ -11,8 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: rdash99/sphinx-action@master
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: build docs
+        uses: rdash99/sphinx-action@master
         with:
           docs-folder: "docs/"
           build-command: "sphinx-build -M markdown . _build"
