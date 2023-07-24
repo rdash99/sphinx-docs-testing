@@ -35,7 +35,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'autoapi.extension',
-   # "sphinx_markdown_builder",
+    "sphinx_markdown_builder",
     "sphinxcontrib.restbuilder",
 ]
 
