@@ -36,6 +36,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'autoapi.extension',
     "sphinx_markdown_builder",
+    "sphinxcontrib.restbuilder",
 ]
 
 #list of directories to search, will go down recursively
