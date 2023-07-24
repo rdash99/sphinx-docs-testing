@@ -13,14 +13,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: build docs
+      - name: Build docs
         uses: rdash99/sphinx-action@master
         with:
           docs-folder: "docs/"
           build-command: "sphinx-build -M markdown . _build"
       - name: Rename index.md to repo name
         run: |
-          mv docs/_build/markdown/index.md docs/_build/markdown/${{ github.event.repository.name }}.md
+          sudo mv docs/_build/markdown/index.md docs/_build/markdown/${{ github.event.repository.name }}.md
       - name: Push to branch
         uses: s0/git-publish-subdir-action@develop
         env:
