@@ -8,17 +8,28 @@ on:
       - "main"
 
 jobs:
-  test-build:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
       - uses: rdash99/sphinx-action@master
         with:
           docs-folder: "docs/"
-      - name: Push to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
+          build-command: "sphinx-build -m markdown . _build"
+      - name: Push to branch
+        uses: github-actions-x/commit@v2.9
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
-          publish_dir: "docs/_build/html"
-          publish_branch: gh-pages
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          push-branch: 'markdown'
+          commit-message: 'publish'
+          force-add: 'true'
+          files: 'docs/_build/*'
+          name: github-actions[bot]
+          email: github-actions[bot]@users.noreply.github.com
+      # - name: Push to gh-pages
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GH_TOKEN }}
+      #     publish_dir: "docs/_build/html"
+      #     publish_branch: gh-pages
       
