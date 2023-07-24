@@ -44,4 +44,4 @@ A github token with at least the `repo` scope. You can create a new token by goi
 
 Replace the `REPO` environment variable with the name of your wiki repository.
 
-All the environment variable options can be found [here]([Title](https://github.com/s0/git-publish-subdir-action))
+All the environment variable options can be found [here](https://github.com/s0/git-publish-subdir-action)
