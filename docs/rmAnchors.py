@@ -15,7 +15,7 @@ def remove_anchors(file):
     with open(file, "w") as f:
         #remove anchors from paths using regex where a link is in the form [text](path#anchor) but replace the anchor with whitespace the same length as the anchor
         regex = r"\[(.*?)\]\((.*?)#(.*?)\)"
-        # replace 3rd group with whitespace the same length as the anchor
+        # replace 3rd group with whitespace the same length as the anchor to preserve formatting
         re.sub(regex, r"[\1](\2" + " " * len(r"\3") + ")", lines)
         f.writelines(lines)
 
